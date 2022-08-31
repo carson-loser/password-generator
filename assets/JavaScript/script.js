@@ -16,10 +16,10 @@ function generatePassword() {
   var passwordOptions = "";
 
 
-  var lowercase = confirm("Lowercase?");
-  var uppercase = confirm("Uppercase?");
-  var numeric = confirm("Numeric?");
-  var specialCharacters = confirm("Special Characters?");
+  var lowercase = confirm("Would you like lowercase characters in your password?");
+  var uppercase = confirm("Would you like uppercase characters in your password?");
+  var numeric = confirm("Would you like numeric values in your password?");
+  var specialCharacters = confirm("Would you like special characters in your password?");
 
   console.log(lowercase);
   console.log(uppercase);
@@ -33,24 +33,34 @@ function generatePassword() {
   if (uppercase == true) {
     passwordOptions = passwordOptions + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
+
   if (numeric == true) {
-    passwordOptions = passwordOptions + "1234567890"
+    passwordOptions = passwordOptions + "1234567890123456789"
   }
 
   if (specialCharacters == true) {
-    passwordOptions = passwordOptions + "!@#$%^&*"
+    passwordOptions = passwordOptions + "!@#$%^&*!@#$%^&*!@#$"
   }
 
-  
+
   var password = ""
 
-  
-  for (let index = 0; index < passwordLength; index++) {
-      console.log(passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length)))
-      password = password + passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length))
-      
+
+  for (var index = 0; index < passwordLength; index++) {
+    console.log(passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length)))
+    password = password + passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length))
+
     console.log(password);
   } return password
+
+  // if (passwordLength < 8 && passwordLength > 128) {
+
+  // }
+
+
+
+
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
