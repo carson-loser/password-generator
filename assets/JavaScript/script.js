@@ -4,6 +4,8 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
+  // if statement allows code to return out of writePassword function if it is empty or doesnt meet beginning criteria
+  // will not log "undefined" when entering an unaccepted value into a prompt
   if (!password) {
     return
   }
@@ -12,12 +14,12 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
+// function generatePassword sets up a prompt for password length
 function generatePassword() {
   var passwordLength = prompt("Choose length, 8-128");
   console.log(passwordLength);
   var passwordOptions = "";
-
+// creates an if statement where if the inputted values is less than 8 OR greater than 128, user will be prompted to pick a new number to fit criteria
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Please pick a number between 8 and 128")
     return 
