@@ -15,6 +15,10 @@ function generatePassword() {
   console.log(passwordLength);
   var passwordOptions = "";
 
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("Please pick a number between 8 and 128")
+    return 
+  }
 
   var lowercase = confirm("Would you like lowercase characters in your password?");
   var uppercase = confirm("Would you like uppercase characters in your password?");
@@ -53,9 +57,7 @@ function generatePassword() {
     console.log(password);
   } return password
 
-  // if (passwordLength < 8 && passwordLength > 128) {
-
-  // }
+  
 
 
 
