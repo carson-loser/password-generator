@@ -34,7 +34,12 @@ function generatePassword() {
   var uppercase = confirm("Would you like uppercase characters in your password?");
   var numeric = confirm("Would you like numeric values in your password?");
   var specialCharacters = confirm("Would you like special characters in your password?");
-
+  
+  // if statement that requires user to select at least one prompt 
+  if (!lowercase && !uppercase && !numeric && !specialCharacters) {
+    alert("please select at least one choice");
+    return;
+  }
   // logs each variable that is tied to a prompt in order
   console.log(lowercase);
   console.log(uppercase);
