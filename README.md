@@ -21,10 +21,10 @@
 
 # Live Server URL
 
-- 
+- https://carson-loser.github.io/password-generator/
 
 # Assets
 
 The following image demonstrates the web application's appearance and functionality:
 
-![](./assets/)
+![Shows a the immediate prompt that displays when the user clicks on generate password](./assets/images/password-gen-SC.png)

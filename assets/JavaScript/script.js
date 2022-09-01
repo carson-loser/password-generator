@@ -66,7 +66,7 @@ function generatePassword() {
 
   var password = ""
 
-
+// if you see this message, could you break this down into simpler terms so that I can see it in writing? I had a live tutor help me write this out, but I am still a little unsure about what it all really does. Thanks! :)
   for (var index = 0; index < passwordLength; index++) {
     console.log(passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length)))
     password = password + passwordOptions.charAt(Math.floor(Math.random() * passwordOptions.length)) 
