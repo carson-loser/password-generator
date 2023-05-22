@@ -31,6 +31,7 @@ To get started with the Password Generator locally on your machine, follow these
    git clone https://github.com/carson-loser/password-generator.git
 
 2. Navigate to the project directory: 
+    ```shell
     cd password generator
 
 3. Open the index.html file on your preferred web browser
@@ -46,5 +47,5 @@ To get started with the Password Generator locally on your machine, follow these
 ## Contributing
 Contributions are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
-## Licensing 
+## License 
 This project is licensed under the MIT License. 
